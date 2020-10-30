@@ -63,6 +63,11 @@ hdi_tidy %>%
                      name = "HDI Value") +
   scale_x_discrete(expand = c(0, 0),
                    name = "Countries",
-                   guide = guide_axis(check.overlap = T)) +
+                   guide = guide_axis(check.overlap = T)) + #check.overlap removes any labels that overlap
   theme_classic() +
   coord_flip()
+
+# other ideas for overlapping labels - using dodge or plotting with plotly for labels to appear on hover with the plotted points
+
+# Task 2
+
